@@ -26,12 +26,6 @@ function createDraggableTrack(containerSelector) {
       maxX: 0,
       minX: window.innerWidth - trackContainer.scrollWidth - 50
     },
-    inertia: true,
-    snap: {
-      x: function (v) {
-        return mySnap(v);
-      }
-    }
   })[0]; // Get the instance
 
   // Add event listener to the .categories links
