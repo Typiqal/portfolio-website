@@ -1,6 +1,6 @@
 console.clear();
 // Register plugins
-gsap.registerPlugin(Draggable, InertiaPlugin, ScrollToPlugin);
+gsap.registerPlugin(Draggable, ScrollToPlugin);
 
 // Function to create draggable track with debugging
 function createDraggableTrack(containerSelector) {
