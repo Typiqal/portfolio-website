@@ -1,0 +1,254 @@
+:root {
+	--text-color:#ffffff;
+	--link-color:#4a76ee;
+	--background-color:#000000;
+  }
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+
+  html {
+	scroll-behavior: smooth;
+  }
+
+body {
+	height: auto; /* Allow body to grow with content */
+	width: 100vw;
+	background-color: #000000;
+	margin: 0;
+	overflow: hidden;
+	overflow-y: auto; /* Allow vertical scrolling */
+	font-family: 'afacad flux', 'sans-serif';
+	color: white;
+	scroll-behavior: smooth;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+	transition: .2s ease; 
+}
+
+a:hover {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .2s ease;
+}
+
+
+.intro-section {
+	margin-top: 75px;
+  }
+  
+  
+  /* Main heading styling */
+  .main-heading {
+	font-size: 2.5em; /* Adjust size as needed */
+	color: var(--text-color);
+	text-align: start; /* Center the text */
+	margin-left: 100px;
+	margin-bottom: 1vh;
+  }
+  
+  .body-text {
+	font-size: 1.25em;
+	color: var(--text-color);
+	text-align: left;
+	margin-left: 100px;
+	margin-right: 1100px;
+	margin-bottom: 75px;
+  }
+
+  
+/*menu */
+
+  nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+  
+	padding: 0 50px;
+	height: 80px;
+  }
+  
+  nav .left a {
+	color: var(--text-color);
+	font-size: 22px;
+	font-weight: 600;
+  }
+  
+  nav .middle a {
+	color: var(--text-color);
+	margin: 0 10px;
+	align-items: center;
+	margin: 10px;
+  }
+  
+  nav .right a {
+	color: var(--text-color);
+	margin: 0 10px;
+  }
+  
+  nav .right a:last-child {
+	color: var(--background-color);
+	background-color: var(--text-color);
+	padding: 5px 15px;
+	border-radius: 5px;
+  }
+  
+  nav .right a span {
+	margin-left: 5px;
+  }
+
+
+/* H2 styling */
+
+.container h2 {
+	font-size: 24px;
+	color: var(--text-color);
+	padding: 20px;
+	text-align: center;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	scroll-snap-align: start;
+	scroll-margin-left: -1800px;
+	
+}
+
+.categories {
+	font-size: 20px;
+	align-items: center;
+	margin-left: 100px;
+	text-align: start;
+	margin-bottom: 4vh;
+}
+
+/* track styling */
+
+.wrapper {
+	font-size: 24px;
+  color: var(--text-color);
+  margin-bottom: 25px;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  }
+
+.container {
+	width: max-content;
+	height: 400px;
+	overflow: visible;
+	align-items: center;
+	margin-bottom: 100px;
+	white-space: nowrap;
+  }
+
+.cards {
+	display: flex;
+	gap: 75px;
+	padding: 0 100px;
+}
+
+.card {
+	display: flex;
+	height: 100%;
+	overflow: hidden;
+	flex: 1 0 -25%;
+	position: relative;
+}
+
+.card img {
+	height: 50vmin;
+	width: auto;
+}
+
+/* Resume Section Styling */
+.resume-container {
+    max-width: 89.75%;
+    margin: 50px auto;
+    color: var(--text-color);
+    font-family: 'afacad flux', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+/* Resume Header */
+.resume-header {
+    text-align: left;
+}
+
+.resume-header h1 {
+    font-size: 2.5em;
+    color: var(--text-color);
+    margin-bottom: 0.5em;
+}
+
+.resume-header .resume-contact {
+    font-size: 1.25em;
+}
+
+.resume-contact a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.resume-contact a:hover {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: 0.2s ease;
+}
+
+/* Two-Column Layout for Content */
+.resume-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px;
+    align-items: start;
+}
+
+/* Left and Right Column Styles */
+.resume-left, .resume-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+/* Headings for Sections */
+.resume-section h2 {
+    font-size: 1.75em;
+    color: var(--text-color);
+    margin-bottom: 0.1em;
+}
+
+.resume-section p {
+    font-size: 1.25em;
+    color: var(--text-color);
+    margin-top: 0.25em;
+	margin-bottom: 0.25em;
+}
+
+/* Skills and Experience Entries */
+ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+    color: var(--text-color);
+	margin-bottom: 1em;
+}
+
+li {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
