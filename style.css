@@ -195,7 +195,7 @@ a:hover {
     font-size: 1.25em;
 }
 
-.resume-contact a {
+.resume-header .resume-contact a {
     color: var(--link-color);
     text-decoration: none;
     transition: 0.2s ease;
