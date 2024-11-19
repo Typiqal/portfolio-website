@@ -47,5 +47,5 @@ function initializeApp() {
   initializeCategoryLinks();
 }
 
-// Wait for the page to load fully before initializing
-window.addEventListener("load", initializeApp);
+// Initialize when DOM is ready
+document.addEventListener("DOMContentLoaded", initializeApp);
