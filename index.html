@@ -20,9 +20,10 @@
     <script defer src="main.js"></script>
 </head>
 
+<!-- PRELOADER -->
+
 <body>
 
-<!-- PRELOADER -->
 <div class="preload">
   <div class="loader-wrapper">
     <div class="circle">
@@ -34,11 +35,16 @@
   </div>
 
   <script>
-    $("document").ready($(".loader-wrapper").fadeOut("slow"));
+    $("document").ready(function () {
+      $(".loader-wrapper").delay(5000).fadeOut("slow");
+    });
 </script>
 
 </div>
-    
+
+
+<!-- MENU -->
+
   <nav>
     <div class="left"> 
         <a href="/"> jasmin pioquinto</a>
@@ -69,7 +75,7 @@
         <span>linkedin</span>
         </a>
 
-        <a href="https://www.instagram.com/jasminp.png/" target="_blank" rel="noopener no-referrer">
+        <a href="https://www.instagram.com/jasminp.photography/" target="_blank" rel="noopener no-referrer">
         <i class="fa-brands fa-instagram"></i>
         <span>instagram</span>
         </a>
@@ -85,10 +91,10 @@
 <div class="intro-section">
     <div class="intro-text">
       <h1 class="main-heading">hello, i'm jasmin! ٩(｡•́‿•̀｡)۶</h1>
-      <p class="body-text">I am a senior university student at Brigham Young University – Idaho studying 
-      Communications with an emphasis in Strategic Organization Communication and a minor in Graphic 
-      Design. I love content creation and bringing my visual ideas to life. Keep scrolling down and take
-     a look at some of the things that I've made.</p>
+      <p class="body-text">I'm a communicator who's invested in the 
+        idea of implementing strategic organization in the public sector through communication and visual means. 
+        
+        Scroll to the left or click on the blue categories to see some of my work.</p>
     </div>
 </div>
 
@@ -243,25 +249,28 @@
 
   <!-- TRACK 2 HEADING -->
 
-  <h1 class="main-heading">photography </h1>
-    <div class="categories">
-      <a class="anchor" href="#grad-portraits">
-        <span>
-          graduation portraits</span>
+<h1 class="main-heading">photography </h1>
+  <div class="categories">
+    <a class="anchor" href="#grad-portraits" data-target=".container.second-track" >
+      <span>graduation portraits</span>
       </a> |
-      <a class="anchor" href="#portrait">
+      <a class="anchor" href="#portrait" data-target=".container.second-track">
         <span>portrait photography</span>
       </a> |
-      <a class="anchor" href="#landscape">
+      <a class="anchor" href="#landscape" data-target=".container.second-track">
         <span>landscape photography</span>
       </a>
-   </div>
+  </div>
 
 <!-- TRACK 2 -->
 
+
+<div class="wrapper">
   <div class="container second-track">
     <div id="photography" class="cards">
+
       <!-- grad portraits -->
+
       <h2 id="grad-portraits">graduation portraits</h2> 
         <div class="card">
           <img class="image" src="images/grad/grad 1.webp" alt="" draggable="false"></img>
@@ -337,21 +346,22 @@
             </div>
           </div>
       </div>
-  
+    </div>
 <!-- TRACK 3 HEADING -->
 
 <h1 class="main-heading">motion graphics & animations</h1>
   <div class="categories">
 
-    <a class="anchor" href="#motion-graphics">
+    <a class="anchor" href="#motion-graphics" data-target=".container.third-track">
       <span>motion graphics</span>
     </a> |
-    <a class="anchor" href="#animations">
+    <a class="anchor" href="#animations" data-target=".container.third-track">
       <span>animations</span>
     </a>
   </div>
 
   <!-- TRACK 3 -->
+<div class="wrapper">
   <div class="container third-track">
     <div id="motion-graphics-animation" class="cards">
       
@@ -390,6 +400,7 @@
     </div>
   </div>
 </div>
+</div>
     
 <h1 class="main-heading" id="resume">resume </h1>
 
@@ -413,25 +424,20 @@
       
       <!-- Left Column -->
       <div class="resume-left">
-          <!-- Profile Summary -->
-          <div class="resume-section">
-              <h2>Profile Summary</h2>
-              <p>Creative and self-driven senior university student with over 6 years of experience creating content and delivering digital media online, including concept creation, graphic design, animation, illustration, and visual conceptualization. Skilled with Adobe Creative Suite (Premiere Pro, After Effects, Photoshop, Illustrator, InDesign, Audition). Eager to learn and grow under senior leadership and to contribute thoughtful recommendations, designs, and edits.</p>
-          </div>
           
           <!-- Education -->
           <div class="resume-section">
               <h2>Education</h2>
               <p><strong>Bachelor of Science in Communications</strong></p>
               <p>January 2020 - December 2024</p>
-              <p>Brigham Young University - Idaho, Rexburg, ID</p>
+              <p>Brigham Young University - Idaho — Rexburg, ID</p>
               <ul>
                   <li>Strategic Organizational Communication Emphasis, Minor in Graphic Design</li>
                   <li>GPA: 3.33/4.0</li>
               </ul>
               <p><strong>High School Diploma</strong></p>
               <p>September 2016 - June 2020</p>
-              <p>Auburn High School, Auburn, WA</p>
+              <p>Auburn High School — Auburn, WA</p>
               <ul>
                   <li>GPA: 3.737/4.0 (Unweighted)</li>
                   <li>AP and Honors coursework</li>
@@ -441,7 +447,7 @@
           <div class="resume-section">
               <h2>Technical Skills</h2>
               <ul>
-                  <li>Adobe Creative Suite (Illustrator, InDesign, After Effects, Premiere Pro, Audition, Photoshop)</li>
+                  <li>Adobe Creative Suite (Illustrator, InDesign, After Effects, Premiere Pro, Audition, Photoshop, Lightroom)</li>
                   <li>Google Suite (Docs, Sheets, Slides, Forms), Microsoft Office Suite (Word, PowerPoint, and Excel)</li>
                   <li>Typing Speed: 70 WPM</li>
               </ul>
@@ -453,29 +459,34 @@
           <!-- Experience -->
           <div class="resume-section">
               <h2>Experience</h2>
-              <p><strong>Public Art Intern</strong> - Sound Transit, Seattle, WA</p>
+              <p><strong>Public Art Intern</strong>, Sound Transit — Seattle, WA</p>
               <p>June 2023 - Present</p>
               <ul>
-                  <li>Assisted in developing interpretive material about artworks in-development and at facilities in operation.</li>
-                  <li>Coordinated content with Sound Transit Art (STart) staff for permanent site plaques, archival histories, and both digital and hard-copy artwork maps focused on informing the public about the intent of the artists and the backstories of the artwork.</li>
-                  <li>Produced visual materials for public and inter-department communication across multiple platforms, from permanent plaques to web content.</li>
+                  <li>Assisted in developing interpretive material about artworks in-development and at facilities in-operation</li>
+                  <li>Coordinated content with Sound Transit Art (STart) staff for permanent site plaques, archival histories, and both 
+                    digital and hard-copy artwork maps focused on informing the public about the intent of the artists and the 
+                    backstories of the artwork </li>
+                  <li>Coordinated content with STart Team and produced visual materials for the public as well as for inter-department 
+                    communication for multiple platforms, from permanent plaques to web content </li>
+                  <li>Compiled accurate data and information about all details of producing integrated artwork and drafted reports for 
+                    project support and information sharing.</li>
               </ul>
 
-              <p><strong>Photographer</strong> - Freelance, Auburn, WA</p>
+              <p><strong>Photographer</strong>, Freelance — Auburn, WA</p>
               <p>September 2022 - Present</p>
               <ul>
                   <li>Operated various photographic equipment such as single lens reflex cameras, film or digital cameras, and lighting.</li>
                   <li>Utilized Adobe Creative Cloud for photo manipulation to achieve desired results.</li>
               </ul>
 
-              <p><strong>Graphic Designer</strong> - Freelance, Auburn, WA</p>
+              <p><strong>Graphic Designer</strong>, Freelance — Auburn, WA</p>
               <p>September 2020 - Present</p>
               <ul>
                   <li>Developed graphics and layouts for posters, stream overlays, and t-shirts to enhance brand awareness.</li>
                   <li>Conceptualized logo designs, animations, videos, motion graphics, and social media content for brand promotion.</li>
               </ul>
 
-              <p><strong>Illustrator</strong> - Freelance, Auburn, WA</p>
+              <p><strong>Illustrator</strong>, Freelance — Auburn, WA</p>
               <p>September 2017 - Present</p>
               <ul>
                   <li>Prepared illustrations and rough sketches of material, collaborating with clients and making adjustments as needed.</li>
@@ -486,4 +497,5 @@
   </div>
 </div>
 </BODY>
+
 </html>
