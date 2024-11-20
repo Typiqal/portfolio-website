@@ -100,7 +100,7 @@ body {
 a {
     color: var(--link-color);
     text-decoration: none;
-	transition: .2s ease; 
+	transition: .2s ease;
 }
 
 a:hover {
@@ -133,9 +133,10 @@ a:hover {
 	color: var(--text-color);
 	text-align: left;
 	margin-left: 100px;
-	margin-right: 1100px;
+	margin-right: 100px;
 	margin-bottom: 75px;
   }
+
 
   
 /*menu */
@@ -178,8 +179,7 @@ a:hover {
 	margin-left: 5px;
   }
 
-
-/* H2 styling */
+/* vertical categories */
 
 .container h2 {
 	font-size: 24px;
@@ -192,6 +192,8 @@ a:hover {
 	scroll-margin-left: -1800px;
 	
 }
+
+/* categories */
 
 .categories {
 	font-size: 20px;
@@ -322,4 +324,579 @@ ul {
 li {
     font-size: 1em;
     margin-bottom: 0.5em;
+}
+
+
+/* responsiveness 1200px*/
+
+@media (max-width: 1200px) {
+
+    /* NAVBAR */
+
+    nav{
+        padding: 0 20px;
+    }    
+
+	nav .left a {
+		color: var(--text-color);
+		font-size: 22px;
+		font-weight: 600;
+	  }
+	  
+	  nav .middle a {
+		color: var(--text-color);
+		margin: 0 10px;
+		align-items: center;
+		margin: 10px;
+	  }
+
+    nav .right a {
+        font-size: 22px;
+    }
+
+    nav .right a:last-child{
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav .right a span {
+        display: none;
+    }
+
+	/* INTRO SECTION */
+
+	.intro-section {
+		margin-top: 75px;
+	  }
+	  
+	  
+	  /* Main heading styling */
+	  .main-heading {
+		font-size: 40px; /* Adjust size as needed */
+		color: var(--text-color);
+		text-align: start; /* Center the text */
+		margin-left: 100px;
+		margin-bottom: 1vh;
+	  }
+
+	  .body-text {
+		font-size: 1.25em;
+		color: var(--text-color);
+		text-align: left;
+		margin-left: 100px;
+		margin-right: 100px;
+		margin-bottom: 75px;
+	  }
+
+	  /* image tracks */
+	
+	  .container {
+		width: max-content;
+		height: 300px;
+		overflow: visible;
+		align-items: center;
+		margin-bottom: 100px;
+		white-space: nowrap;
+	  }
+
+	  .categories {
+		font-size: 18px;
+		align-items: center;
+		margin-left: 100px;
+		text-align: start;
+		margin-bottom: 4vh;
+	}
+
+	.container h2 {
+		font-size: 24px;
+		color: var(--text-color);
+		padding: 20px;
+		text-align: center;
+		writing-mode: vertical-rl;
+		text-orientation: mixed;
+		scroll-snap-align: start;
+		scroll-margin-left: -1100px;
+		
+	}
+
+	.cards {
+		display: flex;
+		gap: 50px;
+		padding: 0 100px;
+	}
+	
+	.card {
+		display: flex;
+		height: 75%;
+		overflow: hidden;
+		flex: 1 0 -50%;
+		position: relative;
+	}
+	
+	.card img {
+		height: 40vmin;
+		width: auto;
+	}
+	
+	.card video {
+		height: 40vmin;
+		display: flex;
+		width: auto;
+	}
+
+
+	/* Resume Section Styling */
+
+	.resume-container {
+
+	padding: 38px;
+    max-width: 89.75%;
+    margin: 50px auto;
+    color: var(--text-color);
+    font-family: 'afacad flux', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+	}
+
+}
+
+/* responsiveness 900px*/
+
+@media (max-width: 900px) {
+
+    /* NAVBAR */
+
+    nav{
+        padding: 0 10px;
+    }    
+
+	nav .left a {
+		color: var(--text-color);
+		font-size: 22px;
+		font-weight: 600;
+		margin: 10px;
+	  }
+	  
+	  nav .middle a {
+		color: var(--text-color);
+		margin: 0 5px;
+		align-items: center;
+		margin: 5px;
+	  }
+
+    nav .right a {
+        font-size: 18px;
+    }
+
+    nav .right a:last-child{
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav .right a span {
+        display: none;
+    }
+
+	/* INTRO SECTION */
+
+	.intro-section {
+		margin-top: 50px;
+	  }
+	  
+	  
+	  /* Main heading styling */
+	  .main-heading {
+		font-size: 30px; /* Adjust size as needed */
+		color: var(--text-color);
+		text-align: start; /* Center the text */
+		margin-left: 100px;
+		margin-bottom: 1vh;
+	  }
+
+	  .body-text {
+		font-size: 1.25em;
+		color: var(--text-color);
+		text-align: left;
+		margin-left: 100px;
+		margin-right: 100px;
+		margin-bottom: 75px;
+	  }
+
+	  /* image tracks */
+	
+	  .container {
+		width: max-content;
+		height: 300px;
+		overflow: visible;
+		align-items: center;
+		margin-bottom: 75px;
+		white-space: nowrap;
+	  }
+
+	  .categories {
+		font-size: 18px;
+		align-items: center;
+		margin-left: 100px;
+		text-align: start;
+		margin-bottom: 4vh;
+	}
+
+	.container h2 {
+		font-size: 20px;
+		color: var(--text-color);
+		padding: 10px;
+		text-align: center;
+		writing-mode: vertical-rl;
+		text-orientation: mixed;
+		scroll-snap-align: start;
+		scroll-margin-left: -800px;
+		
+	}
+
+	.cards {
+		display: flex;
+		gap: 30px;
+		padding: 0 100px;
+	}
+	
+	.card {
+		display: flex;
+		height: 60%;
+		overflow: hidden;
+		flex: 1 0 -50%;
+		position: relative;
+	}
+	
+	.card img {
+		height: 35vmin;
+		width: auto;
+	}
+
+	.card video {
+		height: 35vmin;
+		display: flex;
+		width: auto;
+	}
+
+	/* Resume Section Styling */
+
+	.resume-container {
+
+	padding: 55px;
+    max-width: 89.75%;
+    margin: auto;
+    color: var(--text-color);
+    font-family: 'afacad flux', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+	}
+
+}
+
+/* responsiveness 800px*/
+
+@media (max-width: 800px) {
+
+    /* NAVBAR */
+
+    nav{
+        padding: 0 10px;
+		font-size: 14px;
+		text-align: center;
+    }    
+
+	nav .left a {
+		color: var(--text-color);
+		font-size: 20px;
+		font-weight: 600;
+		margin: 10px;
+	  }
+	  
+	  nav .middle a {
+		color: var(--text-color);
+		margin: 0px;
+		align-items: center;
+		margin: 4px;
+	  }
+
+    nav .right a {
+        font-size: 18px;
+    }
+
+    nav .right a:last-child{
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav .right a span {
+        display: none;
+    }
+
+	/* INTRO SECTION */
+
+	.intro-section {
+		margin-top: 50px;
+	  }
+	  
+	  
+	  /* Main heading styling */
+	  .main-heading {
+		font-size: 28px; /* Adjust size as needed */
+		color: var(--text-color);
+		text-align: start; /* Center the text */
+		margin-left: 100px;
+		margin-bottom: 1vh;
+	  }
+
+	  .body-text {
+		font-size: 1.15em;
+		color: var(--text-color);
+		text-align: left;
+		margin-left: 100px;
+		margin-right: 100px;
+		margin-bottom: 75px;
+	  }
+
+	  /* image tracks */
+	
+	  .container {
+		width: max-content;
+		height: 300px;
+		overflow: visible;
+		align-items: center;
+		margin-bottom: 35px;
+		white-space: nowrap;
+	  }
+
+	  .categories {
+		font-size: 18px;
+		align-items: center;
+		margin-left: 100px;
+		text-align: start;
+		margin-bottom: 4vh;
+	}
+
+	.container h2 {
+		font-size: 20px;
+		color: var(--text-color);
+		padding: 10px;
+		text-align: center;
+		writing-mode: vertical-rl;
+		text-orientation: mixed;
+		scroll-snap-align: start;
+		scroll-margin-left: -800px;
+		
+	}
+
+	.cards {
+		display: flex;
+		gap: 20px;
+		padding: 0 100px;
+	}
+	
+	.card {
+		display: flex;
+		height: 60%;
+		overflow: hidden;
+		flex: 1 0 -50%;
+		position: relative;
+	}
+	
+	.card img {
+		height: 35vmin;
+		width: auto;
+	}
+
+	.card video {
+		height: 35vmin;
+		display: flex;
+		width: auto;
+	}
+
+	/* Resume Section Styling */
+
+	.resume-container {
+
+	padding: 55px;
+    max-width: 89.75%;
+    margin: auto;
+    color: var(--text-color);
+    font-family: 'afacad flux', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+	}
+
+}
+
+/* responsiveness 425px*/
+
+@media (max-width: 425px) {
+
+    /* NAVBAR */
+
+    nav{
+		margin-top: 30px;
+        padding: 0 20px;
+		font-size: 16px;
+		text-align: center;
+    }    
+
+	nav .left a {
+		color: var(--text-color);
+		font-size: 20px;
+		font-weight: 600;
+		margin: 10px;
+	  }
+	  
+	  nav .middle a {
+		color: var(--text-color);
+		align-items: center;
+		
+	  }
+
+    nav .right a:last-child{
+        color: var(--text-color);
+        background-color: transparent;
+		justify-content: center;
+    }
+
+    nav .right a span {
+        display: none;
+    }
+
+	/* INTRO SECTION */
+
+	.intro-section {
+		margin-top: 50px;
+	  }
+	  
+	  
+	  /* Main heading styling */
+	  .main-heading {
+		font-size: 28px; /* Adjust size as needed */
+		color: var(--text-color);
+		text-align: start; /* Center the text */
+		margin-left: 30px;
+		margin-bottom: 1vh;
+	  }
+
+	  .body-text {
+		font-size: 1.15em;
+		color: var(--text-color);
+		text-align: left;
+		margin-left: 30px;
+		margin-right: 30px;
+		margin-bottom: 75px;
+	  }
+
+	  /* image tracks */
+	
+	  .container {
+		width: max-content;
+		height: 200px;
+		overflow: visible;
+		align-items: center;
+		white-space: nowrap;
+		margin-left: -80px;
+		margin-bottom: 100px;
+	  }
+
+	  .categories {
+		font-size: 15.5px;
+		align-items: center;
+		text-align: start;
+		margin-bottom: 3vh;
+		margin-left: 30px;
+	}
+
+	.container h2 {
+		font-size: 20px;
+		color: var(--text-color);
+		padding: 10px;
+		text-align: center;
+		writing-mode: vertical-rl;
+		text-orientation: mixed;
+		scroll-snap-align: start;
+		scroll-margin-left: -405px;
+		
+	}
+
+	.cards {
+		display: flex;
+		gap: 20px;
+		padding: 0 100px;
+	}
+	
+	.card {
+		display: flex;
+		height: 100%;
+		overflow: hidden;
+		flex: 1 0 -50%;
+		position: relative;
+	}
+	
+	.card img {
+		height: 60vmin;
+		width: auto;
+	}
+
+	.card video {
+		height: 60vmin;
+		display: flex;
+		width: auto;
+	}
+
+	/* Resume Section Styling */
+
+	.resume-container {
+
+	padding: 7px;
+    max-width: 89.75%;
+    margin: auto;
+    color: var(--text-color);
+    font-family: 'afacad flux', sans-serif;
+    display: flex;
+    flex-direction: column;
+	}
+
+	.resume-header h1 {
+		font-size: 2em;
+		color: var(--text-color);
+		margin-bottom: 0.5em;
+	}
+	
+	.resume-contact a {
+		color: var(--link-color);
+		text-decoration: none;
+		transition: 0.2s ease;
+		font-size: 20px;
+	}
+	
+	.resume-contact a:hover {
+		display: inline-block;
+		padding: 5px 10px;
+		border: 2px solid var(--link-color);
+		border-radius: 5px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		transition: 0.2s ease;
+	}
+
+	.resume-section h2 {
+		font-size: 1.5em;
+		color: var(--text-color);
+	}
+	
+	.resume-section p {
+		font-size: 1em;
+		color: var(--text-color);
+		margin-bottom: 10px;
+
+	}
 }
