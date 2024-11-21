@@ -123,7 +123,7 @@ a:hover {
   .main-heading {
 	font-size: 48px; /* Adjust size as needed */
 	color: var(--text-color);
-	text-align: start; /* Center the text */
+	text-align: left; /* Center the text */
 	margin-left: 100px;
 	margin-bottom: 1vh;
   }
